@@ -61,6 +61,7 @@ if __name__ == '__main__':
             unit_classes.append(class_names[np.argmax(scores)])
             unit_segments.append([clips[i]['segment'][0],
                                   clips[i + n_elements - 1]['segment'][1]])
+            
 
         if os.path.exists('tmp'):
             subprocess.call('rm -rf tmp', shell=True)
@@ -90,6 +91,7 @@ if __name__ == '__main__':
                 d.text((x + x_offset, y + y_offset), unit_classes[i],
                        font=font, fill=(235, 235, 235))
                 image.save('tmp/image_{:05}_pred.jpg'.format(j))
+            print(unit_classes[i])
 
         dst_file_path = os.path.join(dst_directory_path, video_path.split('/')[-1])
         subprocess.call('ffmpeg -y -r {} -i tmp/image_%05d_pred.jpg -b:v 1000k {}'.format(fps, dst_file_path),
