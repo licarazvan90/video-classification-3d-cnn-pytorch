@@ -1,8 +1,9 @@
 
 
-# Action recognition using 3D-Res-Net: 
-Forked by R. Lica from https://github.com/kenshohara/video-classification-3d-cnn-pytorch
-Tested on Google Compute Engine using: 
+# Action recognition using 3D ResNet: 
+Forked by R. Lica from https://github.com/kenshohara/video-classification-3d-cnn-pytorch.
+
+Tested on Google Compute Engine using the following configuration: 
 
 ```
 OS: Linux Debian 9
@@ -14,9 +15,13 @@ Zone: europe-west1-b
 
 Follow the steps below to install and run this code:
 
-## 1. Install prerequisites (Debian 9): 
+## 1. Install prerequisites (GCE Linux Debian 9): 
+
+
+```
 sudo apt install bzip2, gcc, make, cmake, linux-source, linux-headers-`uname -r`, git
 
+```
 
 ## 2. Install Anaconda
 ```
