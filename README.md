@@ -2,9 +2,9 @@
 
 # Action recognition using 3D ResNet: 
 Forked from https://github.com/kenshohara/video-classification-3d-cnn-pytorch with the 
-purpose of providing more detailed instructions and some scripts in order to make the analysis simpler
+purpose of providing more detailed instructions and some scripts in order to make the analysis easier. 
 
-Tested on Google Compute Engine using the following configuration: 
+Tested with Python3 on Google Compute Engine using the following configuration: 
 
 ```
 OS: Linux Debian 9
