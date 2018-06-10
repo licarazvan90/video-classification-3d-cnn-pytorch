@@ -91,7 +91,7 @@ wget http://crcv.ucf.edu/THUMOS14/test_set/TH14_test_set_mp4/video_test_0000002.
 ### 9.1 Process files
 
 
-Assume input video files are located in ./videos. And the 'input' file contains the names of the video files there.
+Assume input video files are located in ./videos and the 'input' file contains the names of the video files there.
 To calculate class scores for each 16 frames, use --mode score.
 
 ```
@@ -137,7 +137,7 @@ To generate a text-only result:
 
 
 
-# Video Classification Using 3D ResNet ```(original readme)```
+# Video Classification Using 3D ResNet (original readme)
 This is a pytorch code for video (action) classification using 3D ResNet trained by [this code](https://github.com/kenshohara/3D-ResNets-PyTorch).  
 The 3D ResNet is trained on the Kinetics dataset, which includes 400 action classes.  
 This code uses videos as inputs and outputs class names and predicted class scores for each 16 frames in the score mode.  
