@@ -20,7 +20,6 @@ Follow the steps below to install and run this code:
 
 ```
 sudo apt install bzip2, gcc, make, cmake, linux-source, linux-headers-`uname -r`, git
-
 ```
 
 ## 2. Install Anaconda
@@ -65,17 +64,16 @@ Add this to the .bashrc file in order to download files from Google Drive:
 
 ```
 function gdrive_download () {
-                  CONFIRM=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate "https://docs.google.com/uc?export=download&id=$1" -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')
-                              wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$CONFIRM&id=$1" -O $2
-                                            rm -rf /tmp/cookies.txt
-                            }
+  CONFIRM=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate "https://docs.google.com/uc?export=download&id=$1" -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')
+  wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$CONFIRM&id=$1" -O $2
+  rm -rf /tmp/cookies.txt
+}
+source .bashrc
 ```
 
 Then download any [pretrained model](https://drive.google.com/drive/folders/14KRBqT8ySfPtFSuLsFS2U4I-ihTDs0Y9?usp=sharing) using the file IDs:
 
-
 ```
-source .bashrc
 mkdir models && cd models
 gdrive_download 1NOSyEnwPuEdtWHnsVC8JrDfL0sY3iKZV resnext-101-kinetics.pth
 ```
@@ -102,7 +100,7 @@ python main.py --input ./input --video_root ./videos --output ./output.json --mo
 This command can be found in the  ```./run.sh ``` file
 
 ### 9.2 Result Video Generation
-This is a code for generating videos of classification results.  
+This is a Python script for generating videos of classification results.  
 It uses both ```output.json``` and videos as inputs and draw predicted class names in each frame.
 
 #### Requirements
@@ -139,7 +137,7 @@ To generate a text-only result:
 
 
 
-# (original readme) Video Classification Using 3D ResNet
+# Video Classification Using 3D ResNet ```(original readme)```
 This is a pytorch code for video (action) classification using 3D ResNet trained by [this code](https://github.com/kenshohara/3D-ResNets-PyTorch).  
 The 3D ResNet is trained on the Kinetics dataset, which includes 400 action classes.  
 This code uses videos as inputs and outputs class names and predicted class scores for each 16 frames in the score mode.  
