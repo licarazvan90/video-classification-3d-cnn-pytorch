@@ -1,7 +1,8 @@
 
 
 # Action recognition using 3D ResNet: 
-Forked by R. Lica from https://github.com/kenshohara/video-classification-3d-cnn-pytorch.
+Forked from https://github.com/kenshohara/video-classification-3d-cnn-pytorch with the 
+purpose of providing more detailed instructions and some scripts in order to make the analysis simpler
 
 Tested on Google Compute Engine using the following configuration: 
 
@@ -30,7 +31,7 @@ chmod +x Anaconda3-5.1.0-Linux-x86_64.sh
 source .bashrc
 ```
 
-## 3. Get nvidia driver:
+## 3. Get [Nvidia driver](http://www.nvidia.com/download/driverResults.aspx/122818/en-us):
 
 ```
 wget http://us.download.nvidia.com/XFree86/Linux-x86_64/384.66/NVIDIA-Linux-x86_64-384.66.run
@@ -58,7 +59,7 @@ cd ./ffmpeg-3.3.3-64bit-static/; sudo cp ffmpeg ffprobe /usr/local/bin;
 git clone https://github.com/rlica/video-classification-3d-cnn-pytorch.git
 ```
 
-## 7. Download model from google drive:
+## 7. Download pretrained model from Google Drive:
 
 Add this to the .bashrc file in order to download files from Google Drive:
 
