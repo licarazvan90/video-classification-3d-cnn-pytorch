@@ -140,16 +140,16 @@ Full list of parameters:
      '--n_threads'				default=4, type=int, help='Number of threads for multi-thread loading'
      '--model_name'				default='resnet', type=str, help='Currently only support resnet'
      '--model_depth'			default=34, type=int, help='Depth of resnet (10 | 18 | 34 | 50 | 101)'
-     '--resnet_shortcut'		    default='A', type=str, help='Shortcut type of resnet (A | B)'
+     '--resnet_shortcut'		        default='A', type=str, help='Shortcut type of resnet (A | B)'
      '--wide_resnet_k'			default=2, type=int, help='Wide resnet k'
-     '--resnext_cardinality'	    default=32, type=int, help='ResNeXt cardinality'
+     '--resnext_cardinality'	        default=32, type=int, help='ResNeXt cardinality'
      '--no_cuda'				help='If true, cuda is not used.'
      '--verbose'				
 
 
 ## 10. Results
 
-* Some examples of video results:
+* Some examples of videos captioned using this code:
 [TennisSwing](https://www.youtube.com/watch?v=OGxrwzY-aDw)
 [Typing](https://www.youtube.com/watch?v=d19IbrQS6eE)
 [TrampolineJumping](https://www.youtube.com/watch?v=TPnp-UjrCII)
