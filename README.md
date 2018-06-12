@@ -3,6 +3,7 @@
 # Action recognition using 3D ResNet: 
 Forked from https://github.com/kenshohara/video-classification-3d-cnn-pytorch with the 
 purpose of providing more detailed instructions and some scripts in order to make the analysis easier. 
+More details about 3D ResNet can be found here: https://arxiv.org/pdf/1711.09577.pdf
 
 Tested with Python3 on Google Compute Engine using the following configuration: 
 
@@ -129,12 +130,12 @@ To generate a text-only result:
 ```
 
 
+## 10. Results
 
-
-
-
-
-
+* Some examples of video results:
+[TennisSwing](https://www.youtube.com/edit?o=U&video_id=OGxrwzY-aDw)
+[Typing](https://www.youtube.com/edit?o=U&video_id=d19IbrQS6eE)
+[TrampolineJumping](https://www.youtube.com/edit?o=U&video_id=TPnp-UjrCII)
 
 
 
