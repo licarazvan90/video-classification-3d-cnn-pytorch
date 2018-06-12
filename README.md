@@ -131,20 +131,20 @@ To generate a text-only result:
 
 Full list of parameters:
 
-    * '--input'		 			default='input'			type=str, help='Input file path'
-    * '--video_root'			default=''				type=str, help='Root path of input videos'
-    * '--model'					default=''				type=str, help='Model file path'
-    * '--output'				default='output.json'	type=str, help='Output file path'
-    * '--mode'					default='score', type=str, help='Mode (score | feature). score outputs class scores. feature outputs features (after global average pooling).'
-    * '--batch_size'			default=32, type=int, help='Batch Size'
-    * '--n_threads'				default=4, type=int, help='Number of threads for multi-thread loading'
-    * '--model_name'			default='resnet', type=str, help='Currently only support resnet'
-    * '--model_depth'			default=34, type=int, help='Depth of resnet (10 | 18 | 34 | 50 | 101)'
-    * '--resnet_shortcut'		default='A', type=str, help='Shortcut type of resnet (A | B)'
-    * '--wide_resnet_k'			default=2, type=int, help='Wide resnet k'
-    * '--resnext_cardinality'	default=32, type=int, help='ResNeXt cardinality'
-    * '--no_cuda'				help='If true, cuda is not used.'
-    * '--verbose'				
+     '--input'					default='input'			type=str, help='Input file path'
+     '--video_root'				default=''				type=str, help='Root path of input videos'
+     '--model'					default=''				type=str, help='Model file path'
+     '--output'					default='output.json'	type=str, help='Output file path'
+     '--mode'					default='score', type=str, help='Mode (score | feature). score outputs class scores. feature outputs features (after global average pooling).'
+     '--batch_size'				default=32, type=int, help='Batch Size'
+     '--n_threads'				default=4, type=int, help='Number of threads for multi-thread loading'
+     '--model_name'				default='resnet', type=str, help='Currently only support resnet'
+     '--model_depth'			default=34, type=int, help='Depth of resnet (10 | 18 | 34 | 50 | 101)'
+     '--resnet_shortcut'		default='A', type=str, help='Shortcut type of resnet (A | B)'
+     '--wide_resnet_k'			default=2, type=int, help='Wide resnet k'
+     '--resnext_cardinality'	default=32, type=int, help='ResNeXt cardinality'
+     '--no_cuda'				help='If true, cuda is not used.'
+     '--verbose'				
 
 
 ## 10. Results
