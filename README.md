@@ -133,12 +133,6 @@ To generate a text-only result:
 
 Full list of parameters:
 
-| Flag          | Default       | Type   | Help   |
-| ------------- |:-------------:|: -----:|-------:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
 
      '--input'				default='input', type=str, help='Input file path'
      '--video_root'				default='', type=str, help='Root path of input videos'
