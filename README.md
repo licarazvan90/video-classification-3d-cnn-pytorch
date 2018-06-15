@@ -4,6 +4,8 @@
 Forked from https://github.com/kenshohara/video-classification-3d-cnn-pytorch with the 
 purpose of providing more detailed instructions and some scripts in order to make the analysis easier. 
 
+The code can recognize 400 different human activities, the full list can be seen [here](https://github.com/rlica/video-classification-3d-cnn-pytorch/blob/master/class_names_list)
+
 More details about 3D ResNet can be found here (ResNeXt-101 using the cardinality
 of 32): https://arxiv.org/pdf/1711.09577.pdf
 
