@@ -101,9 +101,10 @@ Assume input video files are located in ./videos and the 'input' file contains t
 To calculate class scores for each 16 frames, use --mode score.
 
 ```
-python main.py --input ./input --video_root ./videos --output ./output.json --model ./resnet-34-kinetics.pth --mode score
+python main.py --input ./input --video_root ../videos --output ./output.json --model ../models/resnet-101-kinetics.pth --model_depth 101 --resnet_shortcut B --mode score
 ```
-This command can be found in the  ```./run.sh ``` file
+This command can be found in the  ```./run-resnet-101.sh ``` file
+Note that for resnet-18 or resnet-34, shortcut A should be used instead of B.
 
 ### 9.2 Result Video Generation
 This is a Python script for generating videos of classification results.  
@@ -155,8 +156,11 @@ Full list of parameters:
 ## 10. Results
 
 * Some examples of videos captioned using this code:
+
 [TennisSwing](https://www.youtube.com/watch?v=OGxrwzY-aDw)
+
 [Typing](https://www.youtube.com/watch?v=d19IbrQS6eE)
+
 [TrampolineJumping](https://www.youtube.com/watch?v=TPnp-UjrCII)
 
 
