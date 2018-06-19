@@ -103,7 +103,7 @@ To calculate class scores for each 16 frames, use --mode score.
 ```
 python main.py --input ./input --video_root ../videos --output ./output.json --model ../models/resnet-101-kinetics.pth --model_depth 101 --resnet_shortcut B --mode score
 ```
-This command can be found in the  ```./run-resnet-101.sh ``` file
+This command can be found in the  ```./run-resnet-101.sh ``` file.
 Note that for resnet-18 or resnet-34, shortcut A should be used instead of B.
 
 ### 9.2 Result Video Generation
@@ -130,6 +130,7 @@ The size 5 means that it averages the scores over 5 clips (i.e. 16x5 frames).
 If you use the size as 0, the scores are averaged over all clips of a video. 
 
 To generate a text-only result:
+
 ```
 ./text_results.sh
 ```
