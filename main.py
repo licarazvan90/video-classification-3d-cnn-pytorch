@@ -61,7 +61,7 @@ if __name__=="__main__":
         else:
             print('{} does not exist'.format(input_file))
 
-    if os.path.exists('tmp'):
+#   if os.path.exists('tmp'):
 #        subprocess.call('rm -rf tmp', shell=True)
 
     with open(opt.output, 'w') as f:
