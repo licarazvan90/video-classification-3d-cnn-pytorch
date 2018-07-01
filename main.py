@@ -42,8 +42,8 @@ if __name__=="__main__":
     if opt.verbose:
         ffmpeg_loglevel = 'info'
 
-    if os.path.exists('tmp'):
-        subprocess.call('rm -rf tmp', shell=True)
+#    if os.path.exists('tmp'):
+#        subprocess.call('rm -rf tmp', shell=True)
 
     outputs = []
     for input_file in input_files:
